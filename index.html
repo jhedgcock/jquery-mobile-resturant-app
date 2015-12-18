@@ -1,0 +1,267 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Mexican Restaurant</title>
+
+<!-- Include viewport meta tag for mobile devices -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--Web Fonts-->
+<link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+
+<!-- Theme Roller Themes -->
+<link rel="stylesheet" href="css/themes/fiesta.css" />
+<link rel="stylesheet" href="css/themes/images/jquery.mobile.icons.min.css" />
+
+<!-- Include jQuery Mobile stylesheets - icons theme and structure separated -->
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.css" />
+<!--<link rel="stylesheet" href="css/jquery.mobile.theme-1.4.5.css">-->
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.css">
+
+<!-- Custom Styles -->
+<link rel="stylesheet" href="css/styles.css">
+
+<!-- Include the jQuery library -->
+<script src="js/jquery-1.11.3.min.js"></script>
+
+<!-- Include the jQuery Mobile library -->
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+
+<body>
+
+<!-- This is #HOME -->
+        <section data-role="page" data-theme="b" id="home"><!--PAGE 1-->
+                <header data-role="header">
+                    <h1>Cha Cha's Mexican Food</h1>
+                     <a href="#home" class="ui-btn-right" data-transition="flip">Home</a>
+                    <img src="images/restaurant.jpg" alt="restaurant-interior"/>
+                </header><!-- /header -->
+               <div class="ui-content">
+                    <p>We've been serving quality Sonora-style Mexican food for over 20 years!</p>
+                       <a class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-corner-all" data-transition="turn" href="#info">Hours &amp; Location</a>
+                       <a class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-corner-all" data-transition="turn" href="#drinks">Drinks</a>
+                       <a class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-corner-all" data-transition="turn" href="#appetizers">Appetizers</a>
+                       <a class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-corner-all" data-transition="turn" href="#dinner">Dinner</a>
+                       <a class="ui-btn ui-icon-arrow-r ui-btn-icon-right ui-corner-all" data-transition="turn" href="#dessert">Dessert</a>
+               </div>
+                <footer data-position="fixed" data-role="footer" >
+                    <h4>All Rights Reserved 2015</h4>
+                   
+                </footer><!-- /footer -->  
+         </section>
+ <!--PAGE ONE END-->  
+ <!-- This is #info --> 
+          <section data-role="page" id="info"><!--PAGE 2-->
+         	    <header data-role="header">
+                    <h1>Cha Cha's Mexican Food</h1>
+                    <a href="#home" class="ui-btn-right" data-transition="flip">Home</a>
+                   
+                   	<img src="images/location.jpg"/>
+                </header><!-- /header -->
+                  <div class="ui-content">
+                            <h2>Location and Hours</h2>
+                        
+                        	<ul data-role="listview" data-inset="true">
+                            	<li data-role="list-divider">Hours</li>
+                            	<li>Monday-Friday 4:00PM-10:00PM</li>
+                                <li>Saturday-Sunday 4:00PM-11:00PM</li>
+                          </ul>
+                          <ul data-role="listview" data-inset="true">
+                            	<li data-role="list-divider">Phone</li> 
+                                <li>(760) 543-6543</li>
+                           </ul>
+                           <ul data-role="listview" data-inset="true">
+                            	<li data-role="list-divider">Location</li>
+                                <li>543 W. Pine Ave Carlsbad, CA 92008</li>
+                           </ul>
+                            	<a href="#popMap" data-rel="popup" data-transition="flip"  class="ui-btn >ui-corner-all">Map It</a>
+                                	<div data-role="popup" id="popMap" >  
+                                  	  <img src="images/mapPopUp.png" alt="Map of Location"/> 
+                                    </div>
+                        </div><!-- /content -->
+             	 <footer data-role="footer" data-position="fixed">
+                   <div data-role="navbar">
+                       <ul> 
+                            <li><a href="#home" class="ui-btn ui-icon-arrow-l ui-btn-icon-left" data-transition="turn">Back</a></li>
+                            <li><a href="#home" data-transition="flip">Home</a></li>
+                            <li><a href="#drinks" class="ui-btn ui-icon-arrow-r ui-btn-icon-right" data-transition="turn">Drinks</a></li>
+                        </ul>
+                   </div>
+        		 </footer>
+          </section>
+ <!--PAGE 2 END-->     
+ 
+ <!-- This is #Drinks --> 
+          <section data-role="page" data-theme="b" id="drinks">
+          <header data-role="header">
+                    <h1>Cha Cha's Mexican Food</h1>
+                    <a href="#home" class="ui-btn-right" data-transition="flip">Home</a>
+                  
+                    <img src="images/margarita.jpg"/>
+                </header><!-- /header -->
+          <div class="ui-content">
+                    <h2>Drinks</h2>
+                    	<ul data-role="listview"  data-inset="true" data-filter="true">
+                            <li data-role="list-divider">Alcohol</li>
+                            <li>Beer</li>
+                            <li>Wine</li>
+                            <li>Margarita</li>
+                            <li>Michelada</li>
+                            <li>Sangria</li>
+                            <li>Cuba Libre</li>
+                            <li>Mojito</li>
+
+                   			<li data-role="list-divider">Non-Alcoholic</li>
+                            <li>Sparkling Water</li>
+                            <li>Soda</li>
+                            <li>Lemonade</li>
+                            <li>Horchata</li>
+                            <li>Iced Tea</li>
+                            <li>Hot Tea</li>
+                            <li>Coffee</li>
+
+                            <li data-role="list-divider">Kids</li>
+                            <li>Soda</li>
+                            <li>Milk</li>
+                            <li>Chocolate Milk</li>
+                            <li>Apple Juice</li>
+                            <li>Orange Juice</li>
+                        </ul>
+                        
+                </div><!-- /content -->
+                
+                <footer data-role="footer" data-position="fixed">
+                   <div data-role="navbar">
+                       <ul>
+                            <li><a href="#info" class="ui-btn ui-icon-arrow-l ui-btn-icon-left" data-transition="turn">Info</a></li>
+                             <li><a href="#home" data-transition="flip">Home</a></li>
+                            <li><a href="#appetizers" class="ui-btn ui-icon-arrow-r ui-btn-icon-right" data-transition="turn">Appetizers</a></li>
+                        </ul>
+                   </div>
+                </footer><!-- /footer -->
+        
+            </section>
+ <!--drinks END-->
+ 
+ 
+ 
+ <!-- This is #Appetizers --> 
+          <section data-role="page" data-theme="b" id="appetizers"><!--PAGE 2-->
+         	    <header data-role="header">
+                    <h1>Cha Cha's Mexican Food</h1>
+                    <a href="#home" class="ui-btn-right" data-transition="flip">Home</a>
+                     <img src="images/chipsSalsa.jpg"/>
+                </header><!-- /header -->
+                  <div class="ui-content">
+                  		<h2>Appetizers</h2>
+                            	<ul data-role="listview" data-inset="true" data-filter="true">
+                                    <li>Nachos</li>    
+                                    <li>Chips and Salsa</li>
+                                    <li>Chips and Bean Dip</li>
+                                    <li>Cheese Crisp</li>
+                                    <li>Cheese Crisp with Chicken</li>
+                                    <li>Quesadilla</li>
+                                    <li>Quesadilla with Chicken</li>
+                                </ul>
+                        </div><!-- /content -->
+             	 <footer data-role="footer" data-position="fixed">
+                   <div data-role="navbar">
+                       <ul> 
+                            <li><a href="#drinks" class="ui-btn ui-icon-arrow-l ui-btn-icon-left" data-transition="turn">Drinks</a></li>
+                            <li><a href="#home" data-transition="flip">Home</a></li>
+                            <li><a href="#dinner" class="ui-btn ui-icon-arrow-r ui-btn-icon-right" data-transition="turn">Dinner</a></li>
+                        </ul>
+                   </div>
+        		 </footer>
+          </section>
+ <!--PAGE 2 END--> 
+  
+
+<!-- This is #Dinner --> 
+          <section data-role="page"  data-theme="b" id="dinner">
+          <header data-role="header">
+                    <h1>Cha Cha's Mexican Food</h1>
+                    <a href="#home" class="ui-btn-right" data-transition="flip">Home</a>
+                    <img src="images/tacos.jpg"/>
+                </header><!-- /header -->
+          <div class="ui-content">
+                    <h2>Entrees</h2>
+					<ul data-role="listview" data-filter="true" data-inset="true">
+                    <li data-role="list-divider">Soup</li>
+                           <li>Menudo</li>
+                           <li>Posole</li>
+                           <li>Albondigas</li>
+                           <li data-role="list-divider">Tacos</li>
+                           <li>Fish</li>
+                           <li>Carne Asada</li>
+                           <li>Chicken</li>
+                           <li>Al Pastor</li>
+                           <li>Lengua</li>
+                           <li>Vegetable</li>
+                    	   <li data-role="list-divider">Burritos</li>
+                           <li>Fish</li>
+                           <li>Carne Asada</li>
+                           <li>Al Pastor</li>
+                           <li>Bean and Cheese</li>
+                           <li>Vegetable</li>
+                           <li data-role="list-divider">Tamales</li>
+                           <li>Carne Asada</li>
+                           <li>Pork and Green Chile</li>
+                           <li>Sweet Corn and Green Chile</li>
+                    	   <li data-role="list-divider">Sides</li>
+                           <li>Refried Beans</li>
+                           <li>Black Beans</li>
+                           <li>Spanish Rice</li>
+                           <li>Calabacitas</li>
+                    </ul>
+                    
+                </div><!-- /content -->
+                
+                <footer data-role="footer" data-position="fixed">
+                   <div data-role="navbar">
+                       <ul>
+                            <li><a href="#appetizers" class="ui-btn ui-icon-arrow-l ui-btn-icon-left" data-transition="turn">Appetizers</a></li>
+                             <li><a href="#home" data-transition="flip">Home</a></li>
+                            <li><a href="#dessert" class="ui-btn ui-icon-arrow-r ui-btn-icon-right" data-transition="turn">Dessert</a></li>
+                        </ul>
+                   </div>
+                </footer><!-- /footer -->
+        
+            </section>
+ <!--dinner END--> 
+
+<!-- This is #dessert --> 
+          <section data-role="page" data-theme="b" id="dessert">
+          <header data-role="header">
+                    <h1>Mexican Food</h1>
+                    <a href="#home" class="ui-btn-right" data-transition="flip">Home</a>
+                    <img src="images/dessert.jpg"/>
+                </header><!-- /header -->
+          <div class="ui-content">
+                    <h2>Dessert</h2>
+                       <ul data-role="listview" data-inset="true" data-filter="true">
+                           <li>Flan</li>
+                           <li>Churro</li>
+                           <li>Sopapilla</li>
+                           <li>Vanilla Ice Cream</li>
+                           <li>Tres Leches Cake</li>
+                    </ul>
+                </div><!-- /content -->
+                
+                <footer data-role="footer" data-position="fixed">
+                   <div data-role="navbar">
+                       <ul>
+                            <li><a href="#dinner" data-transition="turn">Dinner</a></li>
+                             <li><a href="#home" data-transition="flip">Home</a></li>
+                            <li><a href="#drinks" data-transition="turn">Drinks</a></li>
+                        </ul>
+                   </div>
+                </footer><!-- /footer -->
+        
+            </section>
+ <!--dinner END--> 
+</body>
+</html>
